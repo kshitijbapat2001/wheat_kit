@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  If you use wheatkit, please cite it as below, AND cite the datasets and models
+  you used (run `wheatkit datasets info <id>` for their DOIs).
+title: "wheatkit: open, honest wheat phenomics from images"
+type: software
+version: 0.1.0.dev0
+license: Apache-2.0
+repository-code: "https://github.com/kshitijbapat2001/wheatkit"
+keywords:
+  - wheat
+  - plant phenotyping
+  - phenomics
+  - computer vision
+  - decision support
+authors:
+  - family-names: Bapat
+    given-names: Kshitij
+# Add co-authors and ORCID iDs before the first release; Zenodo will mint a DOI per release.

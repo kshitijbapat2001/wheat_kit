@@ -1,0 +1,29 @@
+site_name: wheatkit
+site_description: Open, honest wheat phenomics from images
+repo_url: https://github.com/kshitijbapat2001/wheatkit
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: amber
+      toggle: { icon: material/brightness-7, name: Dark mode }
+    - scheme: slate
+      primary: amber
+      toggle: { icon: material/brightness-4, name: Light mode }
+  features: [navigation.sections, content.code.copy]
+nav:
+  - Home: index.md
+  - Datasets: datasets.md
+  - Evaluation: evaluation.md
+  - Responsible use: responsible-use.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - { name: mermaid, class: mermaid, format: !!python/name:pymdownx.superfences.fence_code_format }

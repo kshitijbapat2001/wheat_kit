@@ -1,0 +1,18 @@
+dataset: gwhd_2021
+source: huggingface
+train_split: train
+val_split: validation
+test_split: test
+model:
+  arch: fasterrcnn_resnet50_fpn_v2
+  pretrained_backbone: true
+train:
+  epochs: 20
+  lr: 0.005
+  batch_size: 4
+  device: cuda
+seeds: [0, 1, 2]
+eval:
+  iou_threshold: 0.5
+  report: [average_domain_accuracy, map50, map50_95, count_rrmse_by_domain, count_bias_by_domain]
+output_dir: runs/gwhd_frcnn_v2
